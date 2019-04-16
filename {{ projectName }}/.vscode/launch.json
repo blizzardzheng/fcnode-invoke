@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "fc/{{ projectName }}",
+          "type": "node",
+          "request": "attach",
+          "address": "localhost",
+          "port": 3000,
+          "localRoot": "/Users/caifeng.zxq/code/functions/question/src",
+          "remoteRoot": "/code",
+          "protocol": "inspector",
+          "stopOnEntry": false
+      }
+  ]
+}

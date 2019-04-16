@@ -1,0 +1,33 @@
+{
+  "name": "fc-node-invoke-boilerplate",
+  "version": "1.0.0",
+  "description": "fc-node-invoke",
+  "main": "dist/helloworld",
+  "scripts": {
+    "start": "fun local start",
+    "deploy": "fun deploy",
+    "dev": "tsc -p tsconfig.json -w && fun local start",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "test": "mocha -r ./node_modules/ts-node/register test/*.test.ts",
+    "dev:test": "mocha -r ./node_modules/ts-node/register test/*.test.ts --watch src --watch-extensions ts"
+  },
+  "author": "{{ author }}",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "fc-helper": "^2.1.0",
+    "fc-helper-connect": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "power-assert": "^1.6.1",
+    "@types/node": "^10.12.24",
+    "mocha": "^3.5.0",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.0.3",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.3",
+    "typings": "^2.1.1"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/ts-node
+node_modules/typings
+node_modules/@types**
+node_modules/power-assert
+node_modules/typescript
+node_modules/tslib
+node_modules/mocha
+node_modules/supertest
