@@ -5,8 +5,8 @@
     "module": "commonjs",
     "noImplicitAny": false,
     "moduleResolution": "node",
-    "outDir": "{{ projectName }}/dist",
-    "rootDir": "{{ projectName }}/src",
+    "outDir": "./dist",
+    "rootDir": "./src",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "charset": "utf8",
@@ -25,6 +25,6 @@
     "types": ["node"]
   },
   "exclude": [
-    "{{ projectName }}/test/**"
+    "./test/**"
   ]
 }

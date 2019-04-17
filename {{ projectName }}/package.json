@@ -1,13 +1,14 @@
 {
-  "name": "fc-node-invoke-boilerplate",
+  "name": "{{ projectName }}",
   "version": "1.0.0",
-  "description": "fc-node-invoke",
-  "main": "dist/helloworld",
+  "description": "{{ description }}",
+  "main": "dist/main",
   "scripts": {
     "start": "fun local start",
     "deploy": "fun deploy",
-    "dev": "tsc -p tsconfig.json -w && fun local start",
+    "dev": "tsc -p tsconfig.json -w",
     "build": "rm -rf dist && tsc -p tsconfig.json",
+    "invoke": "node invoke.js",
     "test": "mocha -r ./node_modules/ts-node/register test/*.test.ts",
     "dev:test": "mocha -r ./node_modules/ts-node/register test/*.test.ts --watch src --watch-extensions ts"
   },
@@ -16,7 +17,7 @@
   "dependencies": {
     "dotenv": "^6.2.0",
     "fc-helper": "^2.1.0",
-    "fc-helper-connect": "^1.0.0"
+    "fc-helper-connect": "^1.0.3"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",

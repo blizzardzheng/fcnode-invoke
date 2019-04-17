@@ -7,7 +7,7 @@ Resources:
     helloworld: # function name
       Type: 'Aliyun::Serverless::Function'
       Properties:
-        Handler: 'dist/main.getHelloWorld' #filename
+        Handler: 'dist/handlers.helloworld' #filename
         Runtime: nodejs8
         CodeUri: './'
         Timeout: 1000

@@ -12,6 +12,11 @@ module.exports = {
       "type": "input",
       "name": "author",
       "message": "Please input author?"
+    },
+    {
+      "type": "input",
+      "name": "description",
+      "message": "Please input description?"
     }
   ],
   "vars": {                             // ⑧ 隐式变量
